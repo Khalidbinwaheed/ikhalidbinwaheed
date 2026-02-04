@@ -8,10 +8,16 @@ import { Projects } from '../sections/Projects';
 import { WebProjects } from '../sections/WebProjects';
 import { Contact } from '../sections/Contact';
 import { ThemeToggle } from '../components/ui/ThemeToggle';
+import { SEO } from '../components/SEO';
 
 export function PortfolioHome() {
   return (
     <div className="bg-background min-h-screen text-foreground selection:bg-primary/30 transition-colors duration-300">
+      <SEO 
+        title="Khalid bin Waheed - Software Engineer"
+        description="Portfolio of Khalid bin Waheed, a Software Engineer specializing in full-stack development, cyber security, and modern web technologies."
+        keywords="Khalid bin Waheed, software engineer, portfolio, full stack developer, react, cyber security"
+      />
       <ThemeToggle />
       {/* Fixed Background Elements */}
       <div className="fixed inset-0 z-0 pointer-events-none">

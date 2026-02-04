@@ -6,6 +6,7 @@ import {
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
 import { useState } from 'react';
 import adminAvatar from '../assets/admin_avatar.png';
+import { SEO } from '../components/SEO';
 
 const revenueData = [
   { name: 'Jan', revenue: 12500 },
@@ -30,6 +31,11 @@ export function HotelDashboard() {
 
   return (
     <div className={`flex min-h-screen font-sans ${darkMode ? 'dark bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'}`}>
+      <SEO 
+        title="Hotel Dashboard - Management System" 
+        description="Comprehensive hotel management dashboard for monitoring revenue, occupancy, and guest statistics."
+        keywords="hotel dashboard, management system, hospitality software, admin panel"
+      />
       
       {/* Sidebar */}
       <aside className="w-64 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 flex flex-col fixed h-full z-20">

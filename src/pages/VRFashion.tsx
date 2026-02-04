@@ -1,10 +1,16 @@
 import { motion } from 'framer-motion';
 import { ShoppingBag, Search, User, ArrowRight, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/SEO';
 
 export function VRFashion() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden font-sans relative selection:bg-purple-500/30">
+      <SEO 
+        title="VR Fashion - Immersive Shopping Experience" 
+        description="Experience the future of fashion with our VR shopping platform. Explore and try on clothes in a virtual environment."
+        keywords="vr fashion, virtual reality shopping, immersive experience, metaverse fashion, digital clothing"
+      />
       
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
