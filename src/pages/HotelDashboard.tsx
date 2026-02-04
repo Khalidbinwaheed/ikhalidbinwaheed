@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
 import { useState } from 'react';
+import adminAvatar from '../assets/admin_avatar.png';
 
 const revenueData = [
   { name: 'Jan', revenue: 12500 },
@@ -80,8 +81,8 @@ export function HotelDashboard() {
              </button>
 
             <div className="flex items-center gap-3 pl-6 border-l border-gray-200 dark:border-gray-700">
-              <div className="w-10 h-10 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold">
-                KH
+              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-600">
+                <img src={adminAvatar} alt="Admin" className="w-full h-full object-cover" />
               </div>
               <div className="text-sm">
                 <p className="font-bold">Khalid</p>
